@@ -1,6 +1,6 @@
 # Cerebro - Google Solution Challenge 2025
 
-> A React.Js and Firebase Web Application that lets the User to Make Appointments with a Mental Health Specialist, Chat with a Bot for basic FAQ's and Read some Articles relating to his Mental Problems..
+> A React.Js and Firebase Web Application that lets the User to Make Appointments with a Mental Health Specialist, Chat with a Bot for basic FAQ's and Read some Articles relating to his Mental Problems.
 
 <!-- PROJECT LOGO -->
 <br />
@@ -11,7 +11,7 @@
     <strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://cerebro-phi.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/sahilansari189/Cerebro/issues">Report Bug</a>
     ·
@@ -19,10 +19,9 @@
   </p>
 </div>
 
-
 ## Live Preview Project
 
-[Live Preview]()
+[Live Preview](https://cerebro-phi.vercel.app/)
 
 ## Features
 
@@ -66,6 +65,22 @@ Install the dependencies by running the following command:
 npm install
 ```
 
+### Environment Variables
+
+Create a `.env` file in the root directory and add the following variables:
+
+```env
+VITE_FIREBASE_API_KEY=your-api-key
+VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+VITE_FIREBASE_PROJECT_ID=your-project-id
+VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+VITE_FIREBASE_APP_ID=your-app-id
+VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
+```
+
+> **Note:** Ensure you restart your development server after modifying the `.env` file.
+
 Start the development server:
 
 ```bash
@@ -85,10 +100,10 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Contact
+## Developers
 
-- Sahil Ansari - [@sahilansari189](https://twitter.com/sahilansari189) - sa760887@gmail.com
-- Prashasti - gdgprashasti@gmail.com
+- **Sahil Ansari** - [@sahilansari189](https://twitter.com/sahilansari189) - sa760887@gmail.com
+- **Prashasti** - gdgprashasti@gmail.com
 
 ## Support
 
@@ -97,3 +112,4 @@ Give ⭐️ if you like this project!
 ## License
 
 Cerebro is licensed under the [MIT License](./LICENSE)
+
