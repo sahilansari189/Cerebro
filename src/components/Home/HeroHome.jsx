@@ -24,14 +24,14 @@ const HeroHome = () => {
         <p className="mb-8 text-xl font-normal text-gray-300 lg:text-2xl sm:px-16 xl:px-48">
           Are you Feeling Depressed, Lonely or getting Wrong temptations like
           suicidal thoughts then youre at a good place. Here you can Find
-          Articles regarding your Mental State or you could book an Appointment
+          Articles regarding your Mental State or you could book an Chatbot
           with a Specialist
         </p>
         <p className="mb-8 text-xl font-normal text-gray-300 lg:text-2xl sm:px-16 xl:px-48">
           Get the help you need for a healthy mind and body.
         </p>
         <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-          <Link to="/appointments">
+          <Link to="/Chatbots">
             <button
               type="button"
               className="rounded-lg border border-white bg-white px-5 py-2.5 text-center text-sm font-bold text-gray-500 shadow-none transition-all hover:bg-gray-100 hover:text-gray-500"

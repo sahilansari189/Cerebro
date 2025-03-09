@@ -14,9 +14,9 @@ const Meta = ({ title, description, keywords }) => {
 Meta.defaultProps = {
   title: "Cerebro - Your Mental Health Companion",
   description:
-    "Cerebro is a mental health app that provides articles, appointments, exercises, and self-counseling resources to help you take care of your mental health.",
+    "Cerebro is a mental health app that provides articles, Chatbots, exercises, and self-counseling resources to help you take care of your mental health.",
   keywords:
-    "mental health, app, articles, appointments, exercises, self-counseling",
+    "mental health, app, articles, Chatbots, exercises, self-counseling",
 };
 
 export default Meta;

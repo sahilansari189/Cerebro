@@ -1,6 +1,6 @@
 # Cerebro - Google Solution Challenge 2025
 
-> A React.Js and Firebase Web Application that lets the User to Make Appointments with a Mental Health Specialist, Chat with a Bot for basic FAQ's and Read some Articles relating to his Mental Problems.
+> A React.Js and Firebase Web Application that lets the User to Make Chatbots with a Mental Health Specialist, Chat with a Bot for basic FAQ's and Read some Articles relating to his Mental Problems.
 
 <!-- PROJECT LOGO -->
 <br />
@@ -26,7 +26,7 @@
 ## Features
 
 - Home Screen: Landing page with an overview of the app's features and navigation options.
-- Appointment Screen: Allows users to schedule appointments with mental health professionals or therapists using Chatbot.
+- Chatbot Screen: Allows users to schedule Chatbots with mental health professionals or therapists using Chatbot.
 - Articles Screen: Provides access to mental health-related articles, blogs, and news.
 - Login/Register Screen: Allows users to sign in or register with their email and password or social media accounts.
 - User Profile Screen: Displays user information and allows them to edit their profiles, change their passwords, or delete their accounts.

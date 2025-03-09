@@ -8,8 +8,8 @@ import Footer from './components/Footer';
 import NavbarCmp from './components/NavbarCmp';
 import Loader from './components/Loader';
 
-const AppointmentScreen = React.lazy(() =>
-  import('./screens/AppointmentScreen')
+const ChatbotScreen = React.lazy(() =>
+  import('./screens/ChatbotScreen')
 );
 const ArticleDetailsScreen = React.lazy(() =>
   import('./screens/ArticleDetailsScreen')
@@ -34,7 +34,7 @@ function App() {
             <Route path="/selfCounsel" element={<CounselingScreen />} />
             <Route path="/articles/:id" element={<ArticleDetailsScreen />} />
             <Route path="/articles" element={<ArticlesScreen />} />
-            <Route path="/appointments" element={<AppointmentScreen />} />
+            <Route path="/Chatbots" element={<ChatbotScreen />} />
             <Route path="/" exact element={<HomeScreen />} />
           </Routes>
         </Router>
