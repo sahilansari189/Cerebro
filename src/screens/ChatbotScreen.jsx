@@ -31,22 +31,41 @@ const ChatbotScreen = () => {
 export default ChatbotScreen;
 */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Meta from "../components/Meta";
+import { generateResponse, addMessage } from "../chatbot-script.js"; // Import the ES module
 
 const ChatbotScreen = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "/chatbot-script.js"; //
-    script.async = true;
-    script.onload = () => console.log("Chatbot script loaded successfully");
-    script.onerror = () => console.error("Failed to load chatbot script");
-    document.body.appendChild(script);
+  const [userInput, setUserInput] = useState("");
 
-    return () => {
-      document.body.removeChild(script);
-    };
+  useEffect(() => {
+    console.log("Chatbot script loaded as module");
   }, []);
+
+  const handleSendMessage = async () => {
+    if (userInput.trim() === "") return; // Prevent empty messages
+
+    addMessage(userInput, true); // Show user message
+    setUserInput(""); // Clear input field
+
+    // Show typing indicator
+    const chatMessages = document.getElementById("chat-messages");
+    const typingIndicator = document.createElement("div");
+    typingIndicator.classList.add("message", "bot-message", "typing-indicator");
+    typingIndicator.textContent = "Cerebro is typing...";
+    chatMessages.appendChild(typingIndicator);
+    chatMessages.scrollTo({ top: chatMessages.scrollHeight, behavior: "smooth" });
+
+    try {
+      const response = await generateResponse(userInput);
+      chatMessages.removeChild(typingIndicator); // Remove typing indicator
+      addMessage(response, false); // Show bot response
+    } catch (error) {
+      console.error("Error generating response:", error);
+      chatMessages.removeChild(typingIndicator);
+      addMessage("Sorry, an error occurred. Please try again later.", false);
+    }
+  };
 
   return (
     <>
@@ -65,13 +84,18 @@ const ChatbotScreen = () => {
 
           {/* Chat Input */}
           <div className="chat-input-container flex items-center p-4 bg-gray-200 rounded-b-lg">
-            <textarea id="user-input" rows="1" placeholder="Type your message..." className="flex-1 p-2 border border-gray-300 rounded-lg resize-none"></textarea>
-            <button id="send-button" className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+            <textarea
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && (e.preventDefault(), handleSendMessage())}
+              placeholder="Type your message..."
+              className="flex-1 p-2 border border-gray-300 rounded-lg resize-none"
+            ></textarea>
+            <button onClick={handleSendMessage} className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
               Send
             </button>
           </div>
         </div>
-
       </section>
     </>
   );
