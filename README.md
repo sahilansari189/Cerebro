@@ -77,6 +77,8 @@ VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
 VITE_FIREBASE_APP_ID=your-app-id
 VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
+VITE_GEMINI_API_KEY=your-gemini-api-key
+VITE_GEMINI_API_URL=your-gemini-api-url
 ```
 
 > **Note:** Ensure you restart your development server after modifying the `.env` file.
