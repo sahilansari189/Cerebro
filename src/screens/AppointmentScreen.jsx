@@ -24,7 +24,7 @@ const AppointmentScreen = () => {
               title="Dialogflow Appointment Bot"
               width="100%"
               height="100%"
-              src="https://console.dialogflow.com/api-client/demo/embedded/20436ce1-afc4-46e9-9f07-024772acdeee"
+              src="http://console.dialogflow.com/api-client/demo/embedded/20436ce1-afc4-46e9-9f07-024772acdeee"
               frameBorder="0"
               allow="microphone"
               className="w-full h-full"
