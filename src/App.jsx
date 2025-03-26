@@ -20,6 +20,7 @@ const HomeScreen = React.lazy(() => import('./screens/HomeScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const RegisterScreen = React.lazy(() => import('./screens/RegisterScreen'));
 const UserProfile = React.lazy(() => import('./screens/UserProfile'));
+const AppointmentScreen = React.lazy(() => import('./screens/AppointmentScreen'));
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="/articles/:id" element={<ArticleDetailsScreen />} />
             <Route path="/articles" element={<ArticlesScreen />} />
             <Route path="/Chatbots" element={<ChatbotScreen />} />
+            <Route path="/appointments" element={<AppointmentScreen />} />
             <Route path="/" exact element={<HomeScreen />} />
           </Routes>
         </Router>
