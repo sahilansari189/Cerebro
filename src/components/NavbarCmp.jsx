@@ -120,12 +120,15 @@ const NavbarCmp = () => {
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <Link
-                  to="/"
-                  className="text-gray-600 block px-3 py-2 text-base hover:text-black hover:font-bold"
-                >
-                  Home
-                </Link>
+                {location.pathname !== "/" && (
+  <Link
+    to="/"
+    className="text-gray-600 block px-3 py-2 text-base hover:text-black hover:font-bold"
+  >
+    Home
+  </Link>
+)}
+
                 <Link
                   to="/Chatbots"
                   className="text-gray-600 block px-3 py-2 text-base hover:text-black hover:font-bold"
@@ -195,12 +198,15 @@ const NavbarCmp = () => {
       <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
           {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-          <Link
-            to="/"
-            className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
-          >
-            Home
-          </Link>
+          {location.pathname !== "/" && (
+  <Link
+    to="/"
+    className="text-gray-600 block px-3 py-2 text-base hover:text-black hover:font-bold"
+  >
+    Home
+  </Link>
+)}
+
           <Link
             to="/Chatbots"
             className="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
