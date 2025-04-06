@@ -26,11 +26,11 @@
 ## Features
 
 - Home Screen: Landing page with an overview of the app's features and navigation options.
-- Chatbot Screen: Chat with chatbot.
+- Chatbot Screen: Chat with gemini integrated chatbot.
 - Articles Screen: Provides access to mental health-related articles, blogs, and news.
 - Login/Register Screen: Allows users to sign in or register with their email and password or social media accounts.
 - User Profile Screen: Displays user information and allows them to edit their profiles, change their passwords, or delete their accounts.
-- Navbar and Footer Component: Navigation components that appear on all screens and allow users to access help or log out of their accounts.
+- Appointment Screen: Book appointment.
 - Appointment: Allows users to schedule appointment with mental health professionals or therapists using Dialogflow.
 ## Tech Stack
 

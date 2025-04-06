@@ -24,8 +24,8 @@ const HeroHome = () => {
         <p className="mb-8 text-xl font-normal text-gray-300 lg:text-2xl sm:px-16 xl:px-48">
           Are you Feeling Depressed, Lonely or getting Wrong temptations like
           suicidal thoughts then youre at a good place. Here you can Find
-          Articles regarding your Mental State or you could book an Chatbot
-          with a Specialist
+          Articles regarding your Mental State or you could book an appointment
+          with a Specialist.
         </p>
         <p className="mb-8 text-xl font-normal text-gray-300 lg:text-2xl sm:px-16 xl:px-48">
           Get the help you need for a healthy mind and body.

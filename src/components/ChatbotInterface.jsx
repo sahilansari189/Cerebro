@@ -165,13 +165,13 @@ const ChatbotInterface = () => {
             </button>
           </div>
           <div className="flex space-x-2">
-            <button
+            {/* <button
               onClick={handleTestOpenAI}
               disabled={isLoading}
               className="bg-green-500 text-white rounded-md py-1 px-3 text-sm disabled:opacity-50"
             >
               Test AI Integration
-            </button>
+            </button> */}
             <div className="flex-1 flex justify-end space-x-1 text-xs">
               <span className="self-center text-gray-500">Model:</span>
               <button
